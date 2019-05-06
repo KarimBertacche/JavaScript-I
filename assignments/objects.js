@@ -19,6 +19,61 @@ const example = {
 
 // Write your intern objects here:
 
+//Intern objects
+const intMitzi = {
+  id : 1,
+  name : "Mitzi",
+  email : "mmelloy0@psu.edu",
+  gender : "F"
+}
+
+const intKennan = {
+  id : 2,
+  name : "Kennan", 
+  email : "kdiben1@tinypic.com",
+  gender : "M"
+}
+
+const intKeven = {
+  id : 3,
+  name : "Keven",
+  email : "kmummery2@wikimedia.org",
+  gender : "M"
+}
+
+const intGannie = {
+  id : 4,
+  name : "Gannie",
+  email : "gmartinson3@illinois.edu",
+  gender : "F"
+}
+
+const intAntonietta = {
+  id : 5,
+  name : "Antonietta",
+  email : "adaine5@samsung.com",
+  gender : "F"
+}
+
+console.log(intAntonietta);
+
+
+//Using a function constructor to avoid repetition
+function Intern(id, email, name, gender) {
+  this.id = id;
+  this.email = email;
+  this.name = name;
+  this.gender = gender;
+}
+
+const internMitzi = new Intern(1, "mmelloy0@PushSubscription.edu", "Mitzi", "F");
+const internKennan = new Intern(2, "kdiben1@tinypic.com", "Kennan", "M");
+const internKeven = new Intern(3, "kmummery2@wikimedia.org", "Keven", "M");
+const internGannie = new Intern(4, "gmartinson3@illinois.edu", "Gannie", "M");
+const internAntonietta = new Intern(5, "adaine5@samsung.com", "Antonietta", "F");
+
+console.log(internMitzi);
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
